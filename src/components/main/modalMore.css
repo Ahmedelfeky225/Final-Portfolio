@@ -178,7 +178,7 @@ main .modal-overlay .modal-more .links-icons a .main-icon .icon{
         font-size: 14px !important;
       }
       .scrollP p{
-        font-size: 12px;
+        font-size: 12px !important;
       }
   }
   /* إخفاء الدواير (navigation dots) */
