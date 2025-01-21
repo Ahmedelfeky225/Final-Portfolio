@@ -1,0 +1,134 @@
+/* =============================
+table Content
+================================
+
+1. left section
+2. right section --> Animation  
+*/
+
+/*========================
+1. left section
+========================
+*/
+
+section.hero{
+    margin-top: 3rem;
+}
+section.hero .left-section{
+flex-grow: 1;
+}
+section.hero .left-section .parent-avatar.flex{
+    align-items: end;
+    gap: 6px;
+    min-height: 88px;
+}
+section.hero .avatar{
+    width: 88px;
+    border-radius: 50%;
+    border: 1px solid darkorange;
+    padding: 1px;
+    box-shadow: 2px 2px 40px rgba(203, 200, 200, 0.586) inset;
+}
+section.hero .icon-verified{
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: var(--blue);
+}
+
+.title-info{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+section.hero .title-info h2{
+    text-shadow: var(--text-shadow);
+    color: var(--title);
+    font-weight: 700;
+    font-size: 35px;
+
+}
+section.hero .title-info h4{
+    text-shadow: var(--text-shadow);
+    color: var(--title);
+    font-size: 20px;
+}
+section.hero p.sub-title{
+    color: var(--subtitle);
+    font-size: 0.92rem;
+    line-height: 1.65rem;
+    margin-bottom: 32px;
+    font-weight: 400;
+}
+/* section.hero p.sub-title::first-letter{
+    font-size: 1.1rem;
+    /* font-weight:400 ; */
+    /* color: red;
+}  */
+section.hero .left-section .all-icons.flex{
+    gap: 1rem;
+    font-size: 1.3rem;
+    /* min-height: 50px; */
+    /* background-color: aliceblue; */
+}
+
+section.hero .left-section .all-icons.flex a:nth-child(2) .icon:hover{
+    color: #c73a70;
+}
+section.hero .left-section .all-icons.flex a:nth-child(3) .icon:hover{
+    color: #000;
+}
+section.hero .left-section .all-icons.flex a:nth-child(4) .icon:hover{
+    color: #0073af;
+}
+section.hero .left-section .all-icons.flex a:nth-child(5) .icon:hover{
+    color: #75b47a;
+}
+section.hero .left-section .all-icons.flex a:nth-child(6) .icon:hover{
+    color: #f05656;
+}
+section.hero .left-section .all-icons.flex a{
+    color: var(--subtitle);
+}
+section.hero .left-section .all-icons .icon{
+    transition: transform 0.3s linear;
+}
+section.hero .left-section .all-icons .icon:hover{
+    transform: scale(1.2);
+    color: var(--icon-hover);
+    cursor: pointer;
+}
+
+/*========================
+1. right section == Animation
+========================
+*/
+
+section.hero .animation-dev{
+    width: 85%;
+    transform: translate(100px,0);
+}
+@media (max-width:1250px) {
+    section.hero .animation-dev{
+        display: none;
+    }
+}
+@media (width < 600px) {
+    section.hero .title-info h2{
+        font-size: 33px !important;
+    }
+    .title-info h4{
+        font-size: 18px !important;
+    }
+}
+@media (width < 500px) {
+    section.hero .title-info h2{
+        font-size: 27px !important;
+    }
+    .title-info h4{
+        font-size: 16px !important;
+    }
+    section.hero p.sub-title{
+        font-size: 0.85rem;
+    }
+}
