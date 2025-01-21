@@ -44,7 +44,7 @@ main section.left-section.flex button.active{
     opacity: 1;
     font-weight: bold;
     letter-spacing: 0.6px;
-    padding: 0.9rem 0;
+    padding: 0.85rem 0;
     border: 1px solid var(--blue);
 }
 .light main section.left-section.flex button.active{
@@ -150,8 +150,8 @@ main section.left-section.flex{
 }
 main section.left-section.flex button{
     padding: 0.80rem 0;
-    width: 7.7rem;
-    font-size: 0.9rem;
+    width: 9rem;
+    font-size: 0.95rem;
     /* background-color: red; */
 }
 }

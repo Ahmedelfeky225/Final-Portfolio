@@ -24,7 +24,7 @@ main .modal-overlay .modal-more{
    display: flex;
    justify-content: center;
    flex-direction: column;
-   gap: 1rem;
+   gap: 1.5rem;
    position: relative;
 }
 main .modal-overlay .modal-more .icon-close{
@@ -113,7 +113,6 @@ main .modal-overlay .modal-more .links-icons a .main-icon .icon{
 
 
 
-
 /* CSS for Carousel */
 .carousel-container {
     width: 100%;
@@ -136,7 +135,13 @@ main .modal-overlay .modal-more .links-icons a .main-icon .icon{
   div.gap-2 {
     display: none !important;
   }
-  
+
+   .light div.gap-2 span.bg-white{
+    background-color: #8f8a8a !important;
+   }
+   .light div.gap-2 span:not(.bg-white){
+    background-color: #8f8a8a62 !important;
+   }
   /* تعديلات للشاشات الصغيرة */
   @media (max-width: 700px) {
     .btnBack, .btnTop{
