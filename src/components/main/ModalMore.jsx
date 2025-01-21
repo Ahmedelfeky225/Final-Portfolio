@@ -16,9 +16,11 @@ const ModalMore = ({dataProject,setShowModalMore}) => {
       {<div onClick={()=>{setShowModalMore(false)}}><button className="icon-close"/></div>}
         <div className="detailsProject">
         <h1 className="title">{projectTitle}</h1>
-        <p className="sub-title max-w-5xl text-center mx-auto" style={{lineHeight:1.6}}>
+       <div className="scrollP">
+       <p className="sub-title max-w-5xl text-center mx-auto h-full" style={{lineHeight:1.6}}>
             {detailsProjectDes}
         </p>
+       </div>
         <div className="links-icons">
             <a href={linkLiveProject} target="_blank">
             <div className="main-icon">
