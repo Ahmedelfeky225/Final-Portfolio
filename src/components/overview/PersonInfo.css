@@ -1,23 +1,26 @@
-
+.info-about-me{
+    border-bottom:2px dashed var(--border-color);
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 .info-about-me .section-title{
     text-shadow: 2px 2px 4px #000000;
     color: var(--title);
     font-weight: 600;
     font-size: 22px;
     text-align: center;
-    border: 1px solid yellowgreen;
     text-transform: capitalize;
 } 
 .light .info-about-me .section-title{
     text-shadow: var(--text-shadow);
 }
 .info-about-me .about-me{
-border: 1px solid green;
 display: flex;
 justify-content: center;
 align-items: center;
-gap: 3rem;
-
+gap: 4rem;
 }
 .info-about-me .about-me p{
     margin-bottom: 10px;
@@ -29,4 +32,79 @@ gap: 3rem;
 .info-about-me .about-me p span{
   font-weight: bold;
   font-size: 16px;
+}
+@media (max-width:700px) {
+    .info-about-me .about-me{
+        gap: 1rem;
+        width: 115%;
+        margin-left: -7.5%;
+        margin-right: 7.5%;
+    }
+    .info-about-me .about-me p{
+        font-size: 13px;
+    }
+    .info-about-me .about-me p span{
+        font-size: 13px;
+    }
+}
+@media (max-width:550px) {
+    .info-about-me .about-me{
+        gap: 1rem;
+    }
+    .info-about-me .about-me p{
+        font-size: 12px;
+    }
+    .info-about-me .about-me p span{
+        font-size: 12px;
+    }
+}
+.contain-cv-btn{
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--blue);
+    width: fit-content;
+    margin-inline: auto;
+    padding: 0px 12px 0px 0;
+    background-color: rgba(36, 37, 46, 1);
+    border-radius: 25px;
+    position: relative;
+    z-index: 100;
+    --box-shadow: 0 0 6px 0 #646363;
+    box-shadow: var(--box-shadow);
+}
+.light .contain-cv-btn{
+    /* border: 1px solid #ccc; */
+    border: none;
+    box-shadow: 0 0 6px 0 #228192;;
+}
+.contain-cv-btn::after{
+    content:"";
+    position: absolute;
+    width:0;
+    height: 100%;
+    background-color: var(--blue);
+    left: 8px;
+    border-radius: 25px;
+    transition: width 0.6s;
+    z-index: -1;
+}
+.contain-cv-btn:hover::after{
+    width:calc(100% - 8px);
+}
+.contain-cv-btn .icon-download{
+    background-color: var(--blue);
+   border-radius: 50%;
+   width: 38px;
+   height: 38px;
+   margin-right: 7px;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 4px;
+}
+.contain-cv-btn .btn-download{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
 }

@@ -1,5 +1,8 @@
 import {motion} from "motion/react"
 import "./PersonInfo.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+
 const PersonInfo = () => {
   return (
     <div>
@@ -12,33 +15,49 @@ const PersonInfo = () => {
         <div className="about-me">
             <div className="colLeft">
                 <p>
-                <span>Name:</span> Ahmed Elfeky
+                <span>First Name:</span> Ahmed
                 </p>
                 <p>
                 <span>Age:</span> 23
                 </p>
                 <p>
-                <span>Nationality:</span> Egyptian
+                <span>Phone:</span> +201005845202
                 </p>
             </div>
             <div className="colRight">
             <p>
-                <span>Address:</span> Egypt
+            <p>
+                <span>Last Name:</span> Elfeky
                 </p>
-                <p>
-                <span>Phone:</span> +201005845202
+                <span>Address:</span> Egypt
                 </p>
                 <p>
                 <span>Email:</span> ahmedelfeky913@gmail.com
                 </p>
             </div>
         </div>
-        <a href="/Ahmed Elfeky.pdf" download="Ahmed Elfeky.pdf" >
+        <div className="contain-cv-btn">
+        <div className="icon-download flex justify-center">
+        <FontAwesomeIcon icon={faDownload} size="lg"/>
+        </div>
+        <a href="/Ahmed Elfeky.pdf" download="Ahmed Elfeky.pdf" className="btn-download">
           Download CV
         </a>
+        </div>
 
         </div>
-        
+
+        {/* My Skills */}
+        <div className="info-about-me">
+        <motion.h2 className="section-title" 
+      style={{marginBottom:"10px"}}
+      >
+      My Skills
+      </motion.h2>
+      
+
+        </div>
+        {/* My Skills */}
     </div>
   )
 }
