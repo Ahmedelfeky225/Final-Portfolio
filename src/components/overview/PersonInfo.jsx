@@ -32,7 +32,7 @@ const PersonInfo = () => {
                 <span>Address:</span> Egypt
                 </p>
                 <p>
-                <span>Email:</span> ahmedelfeky913@gmail.com
+                <span>Email:</span> ahmedelfeky913@gmail
                 </p>
             </div>
         </div>
