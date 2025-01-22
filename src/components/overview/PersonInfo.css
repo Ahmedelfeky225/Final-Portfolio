@@ -1,0 +1,32 @@
+
+.info-about-me .section-title{
+    text-shadow: 2px 2px 4px #000000;
+    color: var(--title);
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    border: 1px solid yellowgreen;
+    text-transform: capitalize;
+} 
+.light .info-about-me .section-title{
+    text-shadow: var(--text-shadow);
+}
+.info-about-me .about-me{
+border: 1px solid green;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 3rem;
+
+}
+.info-about-me .about-me p{
+    margin-bottom: 10px;
+    color: var(--title);
+    text-shadow:var(--text-shadow);
+    font-weight: 500;
+    font-size: 15px;
+}
+.info-about-me .about-me p span{
+  font-weight: bold;
+  font-size: 16px;
+}

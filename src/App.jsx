@@ -5,6 +5,7 @@ import Header from "./components/header/Header";
 import Hero from "./components/hero/Hero";
 import Main from "./components/main/Main";
 import { ArrowUpNarrowWide } from 'lucide-react';
+import PersonInfo from "./components/overview/PersonInfo";
 
 
 function App() {
@@ -24,6 +25,8 @@ const [showScrollBtn,setShowScrollBtn] = useState(false)
       <Hero/>
       <div className="divider"/>
       <Main/>
+      <div className="divider"/>
+      <PersonInfo/>
       <div className="divider"/>
       <Contact/>
       <div className="divider"/>
