@@ -60,44 +60,7 @@ section.hero p.sub-title{
     margin-bottom: 32px;
     font-weight: 400;
 }
-/* section.hero p.sub-title::first-letter{
-    font-size: 1.1rem;
-    /* font-weight:400 ; */
-    /* color: red;
-}  */
-section.hero .left-section .all-icons.flex{
-    gap: 1rem;
-    font-size: 1.3rem;
-    /* min-height: 50px; */
-    /* background-color: aliceblue; */
-}
 
-section.hero .left-section .all-icons.flex a:nth-child(2) .icon:hover{
-    color: #c73a70;
-}
-section.hero .left-section .all-icons.flex a:nth-child(3) .icon:hover{
-    color: #000;
-}
-section.hero .left-section .all-icons.flex a:nth-child(4) .icon:hover{
-    color: #0073af;
-}
-section.hero .left-section .all-icons.flex a:nth-child(5) .icon:hover{
-    color: #75b47a;
-}
-section.hero .left-section .all-icons.flex a:nth-child(6) .icon:hover{
-    color: #f05656;
-}
-section.hero .left-section .all-icons.flex a{
-    color: var(--subtitle);
-}
-section.hero .left-section .all-icons .icon{
-    transition: transform 0.3s linear;
-}
-section.hero .left-section .all-icons .icon:hover{
-    transform: scale(1.2);
-    color: var(--icon-hover);
-    cursor: pointer;
-}
 
 /*========================
 1. right section == Animation

@@ -1,13 +1,11 @@
-import {color, motion} from "motion/react"
+import {motion} from "motion/react"
 import "./PersonInfo.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { CircularProgress } from "@mui/joy";
-import Skills from "./SkillCircle";
-
+import MySocial from "../MySocial/MySocial";
 const PersonInfo = () => {
   return (
-    <div className="about-skills">
+    <div className="about-skills relative" id="overview">
         <div className="info-about-me">
         <motion.h2 className="section-title" 
       style={{marginBottom:"10px"}}
@@ -16,26 +14,26 @@ const PersonInfo = () => {
       </motion.h2>
         <div className="about-me">
             <div className="colLeft">
-                <p>
+                <div>
                 <span>First Name:</span> Ahmed
-                </p>
-                <p>
+                </div>
+                <div>
                 <span>Age:</span> 23
-                </p>
-                <p>
+                </div>
+                <div>
                 <span>Phone:</span> +201005845202
-                </p>
+                </div>
             </div>
             <div className="colRight">
-            <p>
-            <p>
+            <div>
+            <div>
                 <span>Last Name:</span> Elfeky
-                </p>
+                </div>
                 <span>Address:</span> Egypt 
-                </p>
-                <p>
+                </div>
+                <div>
                 <span>Email:</span> ahmedelfeky913@gmail
-                </p>
+                </div>
             </div>
         </div>
         <div className="contain-cv-btn">
@@ -48,7 +46,6 @@ const PersonInfo = () => {
         </div>
 
         </div>
-
         {/* My Skills */}
       <div className="skills-section">
       <motion.h2 className="section-title" 
@@ -82,7 +79,7 @@ const PersonInfo = () => {
           strokeWidth="8"
           fillOpacity="0"
           style={{
-            stroke: "rgba(255, 255, 255, 0.6)", // لون فاتح للحدود
+            stroke: "#d6d6d6", // لون فاتح للحدود
             strokeLinecap: "butt",
           }}
         ></path>
@@ -122,11 +119,11 @@ const PersonInfo = () => {
       >
         <img
           src="/html.png"
-          alt="CSS"
+          alt="html"
           style={{ width: "30px", marginTop: "-5px" }}
         />
         <div style={{ fontSize: "12px", marginTop: "-5px" }}>
-          <strong>90%</strong>
+          <strong>85%</strong>
         </div>
       </div>
     </div>
@@ -156,7 +153,7 @@ const PersonInfo = () => {
           strokeWidth="8"
           fillOpacity="0"
           style={{
-            stroke: "rgba(255, 255, 255, 0.6)", // لون فاتح للحدود
+            stroke: "#d6d6d6", // لون فاتح للحدود
             strokeLinecap: "butt",
           }}
         ></path>
@@ -200,7 +197,7 @@ const PersonInfo = () => {
           style={{ width: "30px", marginTop: "-5px" }}
         />
         <div style={{ fontSize: "12px", marginTop: "-5px" }}>
-          <strong>90%</strong>
+          <strong>80%</strong>
         </div>
       </div>
     </div>
@@ -230,7 +227,7 @@ const PersonInfo = () => {
           strokeWidth="8"
           fillOpacity="0"
           style={{
-            stroke: "rgba(255, 255, 255, 0.6)", // لون فاتح للحدود
+            stroke: "#d6d6d6", // لون فاتح للحدود
             strokeLinecap: "butt",
           }}
         ></path>
@@ -270,7 +267,7 @@ const PersonInfo = () => {
       >
         <img
           src="/js.png"
-          alt="CSS"
+          alt="js"
           style={{ width: "30px", marginTop: "-5px" }}
         />
         <div style={{ fontSize: "12px", marginTop: "-5px" }}>
@@ -304,7 +301,7 @@ const PersonInfo = () => {
           strokeWidth="8"
           fillOpacity="0"
           style={{
-            stroke: "rgba(255, 255, 255, 0.6)", // لون فاتح للحدود
+            stroke: "#d6d6d6", // لون فاتح للحدود
             strokeLinecap: "butt",
           }}
         ></path>
@@ -348,7 +345,7 @@ const PersonInfo = () => {
           style={{ width: "30px", marginTop: "-5px" }}
         />
         <div style={{ fontSize: "12px", marginTop: "-5px" }}>
-          <strong>90%</strong>
+          <strong>70%</strong>
         </div>
       </div>
     </div>
@@ -378,7 +375,7 @@ const PersonInfo = () => {
           strokeWidth="8"
           fillOpacity="0"
           style={{
-            stroke: "rgba(255, 255, 255, 0.6)", // لون فاتح للحدود
+            stroke: "#d6d6d6", // لون فاتح للحدود
             strokeLinecap: "butt",
           }}
         ></path>
@@ -418,11 +415,11 @@ const PersonInfo = () => {
       >
         <img
           src="/ts.png"
-          alt="CSS"
+          alt="ts"
           style={{ width: "30px", marginTop: "-5px" }}
         />
         <div style={{ fontSize: "12px", marginTop: "-5px" }}>
-          <strong>90%</strong>
+          <strong>75%</strong>
         </div>
       </div>
     </div>
@@ -452,7 +449,7 @@ const PersonInfo = () => {
           strokeWidth="8"
           fillOpacity="0"
           style={{
-            stroke: "rgba(255, 255, 255, 0.6)", // لون فاتح للحدود
+            stroke: "#d6d6d6", // لون فاتح للحدود
             strokeLinecap: "butt",
           }}
         ></path>
@@ -492,11 +489,11 @@ const PersonInfo = () => {
       >
         <img
           src="/bootstrap.png"
-          alt="CSS"
+          alt="bootstrap"
           style={{ width: "30px", marginTop: "-5px" }}
         />
         <div style={{ fontSize: "12px", marginTop: "-5px" }}>
-          <strong>90%</strong>
+          <strong>80%</strong>
         </div>
       </div>
     </div>
@@ -526,7 +523,7 @@ const PersonInfo = () => {
           strokeWidth="8"
           fillOpacity="0"
           style={{
-            stroke: "rgba(255, 255, 255, 0.6)", // لون فاتح للحدود
+            stroke: "#d6d6d6", // لون فاتح للحدود
             strokeLinecap: "butt",
           }}
         ></path>
@@ -566,7 +563,7 @@ const PersonInfo = () => {
       >
         <img
           src="/git.png"
-          alt="CSS"
+          alt="Git"
           style={{ width: "30px", marginTop: "-5px" }}
         />
         <div style={{ fontSize: "12px", marginTop: "-5px" }}>
@@ -600,7 +597,7 @@ const PersonInfo = () => {
           strokeWidth="8"
           fillOpacity="0"
           style={{
-            stroke: "rgba(255, 255, 255, 0.6)", // لون فاتح للحدود
+            stroke: "#d6d6d6", // لون فاتح للحدود
             strokeLinecap: "butt",
           }}
         ></path>
@@ -653,6 +650,9 @@ const PersonInfo = () => {
       </div>
       
         {/* My Skills */}
+    </div>
+    <div className="absolute right-[-10px] top-[-15px]">
+    <MySocial/>
     </div>
     </div>
   )

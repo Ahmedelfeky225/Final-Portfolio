@@ -34,12 +34,16 @@ const Header = () => {
         setActiveSection("About")
         }} 
         >About</a></li>
-        {/* <li><NavLink to="#overview">Overview</NavLink></li> */}
         <li><a href="#projects" className={activeSection === "Projects" ? "activeSection" :null }
         onClick={()=>{
           setActiveSection("Projects")
           }} 
         >Projects</a></li>
+         <li><a href="#overview" className={activeSection === "overview" ? "activeSection" :null }
+        onClick={()=>{
+          setActiveSection("overview")
+          }} 
+        >Overview</a></li>
         {/* <li><a href="">Certifications</a></li> */}
         <li><a href="#contact"  className={activeSection === "Contact" ? "activeSection" :null }
          onClick={()=>{
@@ -69,10 +73,12 @@ const Header = () => {
           <li><a href="#about" onClick={()=>{
             setShowModal(false)
           }}>About</a></li>
-          {/* <li><a href="">Overview</a></li> */}
           <li><a href="#projects" onClick={()=>{
             setShowModal(false)
           }}>Projects</a></li>
+          <li><a href="#overview" onClick={()=>{
+            setShowModal(false)
+          }}>Overview</a></li>
           {/* <li><a href="">Certifications</a></li> */}
           <li><a href="#contact" onClick={()=>{
             setShowModal(false)

@@ -23,7 +23,7 @@ justify-content: center;
 align-items: center;
 gap: 4rem;
 }
-.info-about-me .about-me p{
+.info-about-me .about-me div{
     margin-bottom: 7px;
     color: var(--title);
     text-shadow:var(--text-shadow);
@@ -98,7 +98,9 @@ gap: 4rem;
     justify-content: center;
     gap: 0.5rem;
 }
-  
+.circle-skills strong{
+    color: var(--title);
+} 
   
 @media (min-width:700px) {
     .circle-skills{
@@ -111,33 +113,37 @@ gap: 4rem;
     }
     
 }
-  
+
 @media (max-width:700px) {
     .info-about-me .about-me{
         gap: 1rem;
-        width: 120%;
+        width: 110%;
         margin-left: -10%;
         margin-right: 10%;
     }
-    .info-about-me .about-me p{
+    .info-about-me .about-me div{
         font-size: 13px;
     }
-    .info-about-me .about-me p span{
+    .info-about-me .about-me div span{
         font-size: 13px;
     }
     .skills-section .skills-container{
         gap: 0.2;
     }
 }
+@media (max-width:400px) {
+    .info-about-me .about-me{
+        width: 120%;
+    }}
 @media (max-width:550px) {
     .info-about-me .about-me{
         gap: 0.5rem;
         padding-left: 4px;
     }
-    .info-about-me .about-me p{
+    .info-about-me .about-me div{
         font-size: 11px;
     }
-    .info-about-me .about-me p span{
+    .info-about-me .about-me div span{
         font-size: 11px;
     }
 }

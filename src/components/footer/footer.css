@@ -27,4 +27,12 @@ footer.flex p{
         flex-direction: column;
         gap: 2rem;
     }
+    footer.flex .copy{
+        font-size: 15px !important;
+    }
+}
+@media (max-width:800px) {
+    footer.flex .copy{
+        font-size: 11px !important;
+    }
 }

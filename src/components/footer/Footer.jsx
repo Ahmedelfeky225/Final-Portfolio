@@ -4,19 +4,19 @@ const Footer = () => {
     <footer className="flex">
         <ul className="links flex">
           <li>
-          <a href="">About</a>
+          <a href="#about">About</a>
           </li>
           <li>
-          <a href="">Projects</a>
+          <a href="#projects">Projects</a>
           </li>
           <li>
-          <a href="">Speaking</a>
+          <a href="#overview">Overview</a>
           </li>
           <li>
-          <a href="">Uses</a>
+          <a href="#contact">contact</a>
           </li>
         </ul>
-        <p>&copy; 2025 Spencer Sharp, All Right Reserved. </p>
+        <p className="copy"> Designed and Developed by Ahmed Elfeky © 2025 </p>
     </footer>
   )
 }
