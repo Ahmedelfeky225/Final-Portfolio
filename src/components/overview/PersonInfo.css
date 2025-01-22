@@ -5,15 +5,16 @@
     flex-direction: column;
     gap: 1rem;
 }
-.info-about-me .section-title{
+.about-skills .section-title{
     text-shadow: 2px 2px 4px #000000;
     color: var(--title);
     font-weight: 600;
     font-size: 22px;
     text-align: center;
     text-transform: capitalize;
+    margin-top: 1rem;
 } 
-.light .info-about-me .section-title{
+.light .about-skills .section-title{
     text-shadow: var(--text-shadow);
 }
 .info-about-me .about-me{
@@ -33,32 +34,7 @@ gap: 4rem;
   font-weight: bold;
   font-size: 16px;
 }
-@media (max-width:700px) {
-    .info-about-me .about-me{
-        gap: 1rem;
-        width: 120%;
-        margin-left: -10%;
-        margin-right: 10%;
-    }
-    .info-about-me .about-me p{
-        font-size: 13px;
-    }
-    .info-about-me .about-me p span{
-        font-size: 13px;
-    }
-}
-@media (max-width:550px) {
-    .info-about-me .about-me{
-        gap: 0.5rem;
-        padding-left: 4px;
-    }
-    .info-about-me .about-me p{
-        font-size: 11px;
-    }
-    .info-about-me .about-me p span{
-        font-size: 11px;
-    }
-}
+
 .contain-cv-btn{
     display: flex;
     align-items: center;
@@ -108,4 +84,60 @@ gap: 4rem;
     color: #fff;
     font-size: 13px;
     font-weight: 600;
+}
+
+
+
+/* skills section */
+
+
+  
+.circle-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+  
+  
+@media (min-width:700px) {
+    .circle-skills{
+        gap: 0.7rem;
+        margin-top: 1rem;
+    }
+    .circle-skills .anan{
+        width: 80px !important;
+        height: 80px !important;
+    }
+    
+}
+  
+@media (max-width:700px) {
+    .info-about-me .about-me{
+        gap: 1rem;
+        width: 120%;
+        margin-left: -10%;
+        margin-right: 10%;
+    }
+    .info-about-me .about-me p{
+        font-size: 13px;
+    }
+    .info-about-me .about-me p span{
+        font-size: 13px;
+    }
+    .skills-section .skills-container{
+        gap: 0.2;
+    }
+}
+@media (max-width:550px) {
+    .info-about-me .about-me{
+        gap: 0.5rem;
+        padding-left: 4px;
+    }
+    .info-about-me .about-me p{
+        font-size: 11px;
+    }
+    .info-about-me .about-me p span{
+        font-size: 11px;
+    }
 }
