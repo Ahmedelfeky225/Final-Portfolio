@@ -143,7 +143,23 @@ let myProjects = [
             "./images/movie5.jpg"
         ],
         detailsProjectDes: "In this project, I collaborated with a partner for our graduation project funded by the DEPI grant from the Ministry of Communications. The project was focused on building a Movies platform. My role involved developing the front end and managing data storage in the database using MongoDB.Through this project, I gained valuable experience in backend operations, even contributing to some aspects of it. I learned how to implement pagination and split my pages efficiently. The technologies used in the project include HTML, CSS, React, Bootstrap, Node.js, Express, and MongoDB."
-    }
+    },
+    {
+        projectTitle: "Landing Page",
+        projectDesc: "This landing page is built with HTML and CSS, featuring 9 sections designed for a smooth and engaging user experience.",
+        imgPath: "./images/landingPagge.jpg",
+        category: ["html", "css"],
+        linkLiveProject: "https://landdinngg.netlify.app/",
+        linkProjectInGithub: "https://github.com/Ahmedelfeky225/Landing-Page-Web-Masters",
+        sliderImages: [
+            "./images/landingPagge.jpg",
+            "./images/landing-section2.jpg",
+            "./images/landing-section3.jpg",
+            "./images/landing-section4.jpg",
+            "./images/landing-section5.jpg",
+        ],
+        detailsProjectDes: "This website consists of multiple landing pages, each designed to highlight different aspects of a product or service. It also includes dedicated sections to showcase products in an engaging and visually appealing manner. A well-structured header and footer ensure smooth navigation, enhancing the overall user experience. The design is fully responsive, making it accessible across various devices.",
+    },
 ]
 
 export const buttonCategories = [
