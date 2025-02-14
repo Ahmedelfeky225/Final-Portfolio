@@ -11,7 +11,6 @@ let myProjects = [
             "./images/dash2.jpg",
             "./images/dash3.jpg",
             "./images/dash4.jpg",
-            // "./images/dash5.jpg"
         ],
         detailsProjectDes: "The dashboard features 8 fully responsive pages optimized for all screen sizes. These include the Home Page, Settings Page, Profile Page, Projects Page, Courses Page, Friends Page, Files Page, and Plans Page. The design is crafted using HTML and CSS to ensure a clean and functional user interface."
     },
@@ -160,11 +159,11 @@ let myProjects = [
         ],
         detailsProjectDes: "This website consists of multiple landing pages, each designed to highlight different aspects of a product or service. It also includes dedicated sections to showcase products in an engaging and visually appealing manner. A well-structured header and footer ensure smooth navigation, enhancing the overall user experience. The design is fully responsive, making it accessible across various devices.",
     },
- {
+    {
         projectTitle: "Static Movies",
         projectDesc: "A static movie website built with HTML, Tailwind CSS, and JavaScript, featuring a modern design, navigation bar, and a full-screen background image to showcase movie details in an engaging way. 🎬",
         imgPath: "./images/MovW1.jpg",
-        category: ["html", "css","js"],
+        category: ["html", "css", "js"],
         linkLiveProject: "https://movies-static.netlify.app/",
         linkProjectInGithub: "https://github.com/Ahmedelfeky225/Static-Movies-Web-Masters.git",
         sliderImages: [
@@ -172,11 +171,10 @@ let myProjects = [
             "./images/MovW2.jpg",
             "./images/MovW3.jpg",
             "./images/MovW4.jpg",
-             "./images/MovM1.jpg",
-	     "./images/MovW2.jpg"
+            "./images/MovM1.jpg",
+            "./images/MovM1.jpg"
         ],
-        detailsProjectDes: "This project is a rebuilt static movie website developed during an internship, where the task was to convert all CSS to a modern framework, and Tailwind CSS was chosen for the transformation.
-The website features a Landing Page, followed by a movie card section displaying various films, and a "Coming Soon" section showcasing upcoming movies with similar card layouts. It also includes a fully designed Footer and interactive JavaScript enhancements, such as a sticky Navbar that remains fixed while scrolling. The fully responsive project ensures a seamless user experience across different screen sizes. 🎬"
+        detailsProjectDes: "This project is a rebuilt static movie website developed during an internship, where the task was to convert all CSS to a modern framework, and Tailwind CSS was chosen for the transformation.The website features a Landing Page, followed by a movie card section displaying various films, and a Coming Soon section showcasing upcoming movies with similar card layouts. It also includes a fully designed Footer and interactive JavaScript enhancements, such as a sticky Navbar that remains fixed while scrolling. The fully responsive project ensures a seamless user experience across different screen sizes. 🎬"
     }
 ]
 
