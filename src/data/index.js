@@ -171,8 +171,8 @@ let myProjects = [
             "./images/MovW2.jpg",
             "./images/MovW3.jpg",
             "./images/MovW4.jpg",
-            "./images/MovM1.jpg",
-            "./images/MovM1.jpg"
+            "./images/MovM1.png",
+            "./images/MovM2.png"
         ],
         detailsProjectDes: "This project is a rebuilt static movie website developed during an internship, where the task was to convert all CSS to a modern framework, and Tailwind CSS was chosen for the transformation.The website features a Landing Page, followed by a movie card section displaying various films, and a Coming Soon section showcasing upcoming movies with similar card layouts. It also includes a fully designed Footer and interactive JavaScript enhancements, such as a sticky Navbar that remains fixed while scrolling. The fully responsive project ensures a seamless user experience across different screen sizes. 🎬"
     }
