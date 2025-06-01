@@ -6,6 +6,7 @@ import { Navigation, Pagination, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { limitDesc } from "../../utils/functions";
 const ModalMore = ({ dataProject, setShowModalMore }) => {
   const {
     projectTitle,
@@ -40,7 +41,7 @@ const ModalMore = ({ dataProject, setShowModalMore }) => {
                 className="sub-title max-w-5xl text-center mx-auto h-full"
                 style={{ lineHeight: 1.6 }}
               >
-                {detailsProjectDes}
+                {limitDesc(detailsProjectDes, 400)}
               </p>
             </div>
             <div className="links-icons">
