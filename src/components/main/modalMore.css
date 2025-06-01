@@ -163,6 +163,7 @@ div.gap-2 {
   }
   main .modal-overlay .modal-more {
     width: 92%;
+    height: 98vh !important;
   }
   .carousel-container {
     height: 250px !important; /* ارتفاع أقل للشاشات الصغيرة */
