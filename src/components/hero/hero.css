@@ -11,87 +11,92 @@ table Content
 ========================
 */
 
-section.hero{
-    margin-top: 3rem;
+section.hero {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
 }
-section.hero .left-section{
-flex-grow: 1;
+section.hero .left-section {
+  /* flex-grow: 1; */
+  width: 50%;
 }
-section.hero .left-section .parent-avatar.flex{
-    align-items: end;
-    gap: 6px;
-    min-height: 88px;
+section.hero .left-section .parent-avatar.flex {
+  align-items: end;
+  gap: 6px;
+  min-height: 88px;
 }
-section.hero .avatar{
-    width: 88px;
-    border-radius: 50%;
-    border: 1px solid darkorange;
-    padding: 1px;
-    box-shadow: 2px 2px 40px rgba(203, 200, 200, 0.586) inset;
+section.hero .avatar {
+  width: 88px;
+  border-radius: 50%;
+  border: 1px solid darkorange;
+  padding: 1px;
+  box-shadow: 2px 2px 40px rgba(203, 200, 200, 0.586) inset;
 }
-section.hero .icon-verified{
-    font-size: 1.1rem;
-    margin-bottom: 0.3rem;
-    color: var(--blue);
-}
-
-.title-info{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    text-transform: capitalize;
-}
-section.hero .title-info h2{
-    text-shadow: var(--text-shadow);
-    color: var(--title);
-    font-weight: 700;
-    font-size: 35px;
-
-}
-section.hero .title-info h4{
-    text-shadow: var(--text-shadow);
-    color: var(--title);
-    font-size: 20px;
-}
-section.hero p.sub-title{
-    color: var(--subtitle);
-    font-size: 0.92rem;
-    line-height: 1.65rem;
-    margin-bottom: 32px;
-    font-weight: 400;
+section.hero .icon-verified {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: var(--blue);
 }
 
+.title-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+section.hero .title-info h2 {
+  text-shadow: var(--text-shadow);
+  color: var(--title);
+  font-weight: 700;
+  font-size: 35px;
+}
+section.hero .title-info h4 {
+  text-shadow: var(--text-shadow);
+  color: var(--title);
+  font-size: 20px;
+}
+section.hero p.sub-title {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  line-height: 1.65rem;
+  margin-bottom: 32px;
+  font-weight: 400;
+}
 
 /*========================
 1. right section == Animation
 ========================
 */
-
-section.hero .animation-dev{
-    width: 85%;
-    transform: translate(100px,0);
+section.hero .right-section {
+  width: 40%;
 }
-@media (max-width:1250px) {
-    section.hero .animation-dev{
-        display: none;
-    }
+section.hero .animation-dev {
+  width: 100%;
+  transform: translate(100px, 0);
+}
+@media (max-width: 1250px) {
+  section.hero .right-section {
+    display: none;
+  }
+  section.hero .left-section {
+    width: 100% !important;
+  }
 }
 @media (width < 600px) {
-    section.hero .title-info h2{
-        font-size: 33px !important;
-    }
-    .title-info h4{
-        font-size: 18px !important;
-    }
+  section.hero .title-info h2 {
+    font-size: 33px !important;
+  }
+  .title-info h4 {
+    font-size: 18px !important;
+  }
 }
 @media (width < 500px) {
-    section.hero .title-info h2{
-        font-size: 25px !important;
-    }
-    .title-info h4{
-        font-size: 16px !important;
-    }
-    section.hero p.sub-title{
-        font-size: 0.85rem;
-    }
+  section.hero .title-info h2 {
+    font-size: 24px !important;
+  }
+  .title-info h4 {
+    font-size: 16px !important;
+  }
+  section.hero p.sub-title {
+    font-size: 0.8rem;
+  }
 }

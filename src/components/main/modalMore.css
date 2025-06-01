@@ -1,188 +1,203 @@
-main .modal-overlay{
-    position: fixed;
-    inset: 0;
-    /* background-color: rgba(40, 40, 48, 0.993); */
-    background-color:  #1f1f1f;
-    width: 99%;
-    height: 100%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-inline: auto;
-    z-index: 11;
+main .modal-overlay {
+  position: fixed;
+  inset: 0;
+  /* background-color: rgba(40, 40, 48, 0.993); */
+  background-color: var(--primary-color);
+  width: 99%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  z-index: 11;
 }
 
-
-main .modal-overlay .modal-more{
-   width: 70%;
-   height: 90vh;
-   background-color: var(--secondary-color);
-   border-radius: 1rem;
-   padding: 0rem 2rem 2rem 2rem;
-   text-align: center;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   gap: 1.5rem;
-   position: relative;
+main .modal-overlay .modal-more {
+  width: 70%;
+  height: 95vh;
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+  padding: 0rem 2rem 2rem 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  box-shadow: 1px 1px 5px #8f8b8b17, -1px -1px 5px #8f8b8b17;
 }
-main .modal-overlay .modal-more .icon-close{
-    position: absolute;
-    right: -12px;
-    top: -12px;
-    background-color: var(--blue);
-    width: 33px;
-    height: 33px;
-    font-size: 16px;
-    border-radius: 50%;
+main .modal-overlay .modal-more .icon-close {
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  background-color: var(--blue);
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+  border-radius: 50%;
+  transition: 0.3s;
+  box-shadow: 1px 1px 5px rgba(181, 180, 180, 0.611),
+    -1px -1px 5px rgba(138, 138, 138, 0.621);
 }
-main .modal-overlay .modal-more .icon-close:hover{
-    background-color: rgb(67,169,238);
+main .modal-overlay .modal-more .icon-close:hover,
+.btnPrev:hover,
+.btnNext:hover {
+  background-color: var(--btnModal-more) !important;
 }
-main .modal-overlay .modal-more .detailsProject{
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
+main .modal-overlay .modal-more .detailsProject {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
 }
-main .modal-overlay .modal-more h1.title{
-font-size: 20px;
-font-weight: 600;
-letter-spacing: 0.3px;
-text-shadow: 2px 2px 4px #00000046;
-color: var(--title);
+main .modal-overlay .modal-more h1.title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-shadow: 2px 2px 4px #00000046;
+  color: var(--title);
 }
-main .modal-overlay .modal-more p.sub-title{
-    font-size: 14px;
-    line-height: 1.4;
-    color: var(--title);
+main .modal-overlay .modal-more p.sub-title {
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--title);
 }
-main .modal-overlay .modal-more .links-icons{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+main .modal-overlay .modal-more .links-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
-main .modal-overlay .modal-more .links-icons a{
-    color: #fff;
+main .modal-overlay .modal-more .links-icons a {
+  color: #fff;
 }
-main .modal-overlay .modal-more .links-icons a .main-icon{
-    background-color: rgba(36, 37, 46, 1);
-    width:fit-content ;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-right: 20px;
-    border: 1px solid var(--blue);
-    position: relative;
-    z-index: 10;
-    --box-shadow: 0 0 6px 0 #646363;
-    box-shadow: var(--box-shadow);
+main .modal-overlay .modal-more .links-icons a .main-icon {
+  background-color: rgba(36, 37, 46, 1);
+  width: fit-content;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 20px;
+  border: 1px solid var(--blue);
+  position: relative;
+  z-index: 10;
+  --box-shadow: 0 0 6px 0 #646363;
+  box-shadow: var(--box-shadow);
 }
-main .modal-overlay .modal-more .links-icons a .main-icon::after{
-    content: "";
-    position: absolute;
-    left: 8px;
-    height: 100%;
-    width: 0;
-    background-color:var(--blue);
-    z-index: -1;
-    border-radius: 25px;
-    transition: width 0.5s linear;
+main .modal-overlay .modal-more .links-icons a .main-icon::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  height: 100%;
+  width: 0;
+  background-color: var(--blue);
+  z-index: -1;
+  border-radius: 25px;
+  transition: width 0.5s linear;
 }
-main .modal-overlay .modal-more .links-icons a .main-icon:hover::after{
-    width: calc(100% - 8px);
+main .modal-overlay .modal-more .links-icons a .main-icon:hover::after {
+  width: calc(100% - 8px);
 }
 
 main .modal-overlay .modal-more .links-icons a .main-icon {
-    font-size: 14px;
+  font-size: 14px;
 }
-main .modal-overlay .modal-more .links-icons a .main-icon .icon{
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    background-color: var(--blue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-  
+main .modal-overlay .modal-more .links-icons a .main-icon .icon {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
 }
-
-
-
 
 /* CSS for Carousel */
 .carousel-container {
-    width: 100%;
+  width: 100%;
+}
+
+.contain-images {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 5px rgb(174, 174, 174, 0.268),
+    -1px -1px 5px rgba(174, 174, 174, 0.268);
+}
+
+.contain-images img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  border-radius: 0.2rem;
+  /* opacity: 0.9; */
+}
+div.gap-2 {
+  display: none !important;
+}
+
+.light div.gap-2 span.bg-white {
+  background-color: #8f8a8a !important;
+}
+.light div.gap-2 span:not(.bg-white) {
+  background-color: #8f8a8a62 !important;
+}
+.btnPrev,
+.btnNext {
+  background-color: var(--blue) !important;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.105),
+    -1px -1px 5px rgba(255, 255, 255, 0.105);
+  transition: 0.3s;
+}
+
+/* تعديلات للشاشات الصغيرة */
+@media (max-width: 700px) {
+  .btnBack,
+  .btnTop {
+    width: 30px !important;
+    height: 30px !important;
   }
-  
+  main .modal-overlay .modal-more {
+    width: 92%;
+    height: 85vh !important;
+  }
+  .carousel-container {
+    height: 250px !important; /* ارتفاع أقل للشاشات الصغيرة */
+  }
+
   .contain-images {
-    width: 80% ;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100% !important;
+    height: 100% !important;
   }
-  
+
   .contain-images img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: cover; 
-    border-radius: 0.5rem;
+    object-position: center center;
+    object-fit: fill;
   }
-  div.gap-2 {
+  main .modal-overlay .modal-more {
+    padding: 2rem 1.5rem;
+  }
+  .btnBack,
+  .btnTop {
     display: none !important;
   }
-
-   .light div.gap-2 span.bg-white{
-    background-color: #8f8a8a !important;
-   }
-   .light div.gap-2 span:not(.bg-white){
-    background-color: #8f8a8a62 !important;
-   }
-  /* تعديلات للشاشات الصغيرة */
-  @media (max-width: 700px) {
-    .btnBack, .btnTop{
-        width: 30px !important;
-        height: 30px !important;
-    }
-    main .modal-overlay .modal-more{
-        width: 92%;
-        height: 85vh !important;
-    }
-    .carousel-container {
-      height: 250px !important; /* ارتفاع أقل للشاشات الصغيرة */
-    }
-  
-    .contain-images {
-      width: 100% !important;
-      height: 100% !important;
-    }
-  
-    .contain-images img {
-      width: 100% !important;
-      height: 100% !important;
-      object-position: center center;
-      object-fit: fill;
-    }
-    main .modal-overlay .modal-more{
-       padding: 2rem 1.5rem;
-    }
-    .btnBack, .btnTop{
-        display: none !important;
-    }
-    div.gap-2 {
-        display: flex !important;
-        bottom: -40px !important;
-      }
-      main .modal-overlay .modal-more .icon-close{
-        width: 30px !important;
-        height: 30px !important;
-        font-size: 14px !important;
-      }
-      .scrollP p{
-        font-size: 12px !important;
-      }
+  div.gap-2 {
+    display: flex !important;
+    bottom: -40px !important;
   }
-  /* إخفاء الدواير (navigation dots) */
+  main .modal-overlay .modal-more .icon-close {
+    width: 30px !important;
+    height: 30px !important;
+    font-size: 14px !important;
+  }
+  .scrollP p {
+    font-size: 12px !important;
+  }
+}
+/* إخفاء الدواير (navigation dots) */

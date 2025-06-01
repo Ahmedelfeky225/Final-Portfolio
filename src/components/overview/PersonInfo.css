@@ -1,149 +1,145 @@
-.info-about-me{
-    border-bottom:2px dashed var(--border-color);
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.info-about-me {
+  border-bottom: 2px dashed var(--border-color);
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-.about-skills .section-title{
-    text-shadow: 2px 2px 4px #000000;
-    color: var(--title);
-    font-weight: 600;
-    font-size: 22px;
-    text-align: center;
-    text-transform: capitalize;
-    margin-top: 1rem;
-} 
-.light .about-skills .section-title{
-    text-shadow: var(--text-shadow);
+.about-skills .section-title {
+  text-shadow: 2px 2px 4px #000000;
+  color: var(--title);
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 1rem;
 }
-.info-about-me .about-me{
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 4rem;
+.light .about-skills .section-title {
+  text-shadow: var(--text-shadow);
 }
-.info-about-me .about-me div{
-    margin-bottom: 7px;
-    color: var(--title);
-    text-shadow:var(--text-shadow);
-    font-weight: 500;
-    font-size: 15px;
+.info-about-me .about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
 }
-.info-about-me .about-me p span{
+.info-about-me .about-me div {
+  margin-bottom: 7px;
+  color: var(--title);
+  text-shadow: var(--text-shadow);
+  font-weight: 500;
+  font-size: 15px;
+}
+.info-about-me .about-me p span {
   font-weight: bold;
   font-size: 16px;
 }
 
-.contain-cv-btn{
-    display: flex;
-    align-items: center;
-    border: 1px solid var(--blue);
-    width: fit-content;
-    margin-inline: auto;
-    padding: 0px 12px 0px 0;
-    background-color: rgba(36, 37, 46, 1);
-    border-radius: 25px;
-    position: relative;
-    z-index: 100;
-    --box-shadow: 0 0 6px 0 #646363;
-    box-shadow: var(--box-shadow);
+.contain-cv-btn {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--blue);
+  width: fit-content;
+  margin-inline: auto;
+  padding: 0px 12px 0px 0;
+  background-color: rgba(36, 37, 46, 1);
+  border-radius: 25px;
+  position: relative;
+  z-index: 1;
+  --box-shadow: 0 0 6px 0 #646363;
+  box-shadow: var(--box-shadow);
 }
-.light .contain-cv-btn{
-    /* border: 1px solid #ccc; */
-    border: none;
-    box-shadow: 0 0 6px 0 #228192;;
+.light .contain-cv-btn {
+  /* border: 1px solid #ccc; */
+  border: none;
+  box-shadow: 0 0 6px 0 #228192;
 }
-.contain-cv-btn::after{
-    content:"";
-    position: absolute;
-    width:0;
-    height: 100%;
-    background-color: var(--blue);
-    left: 8px;
-    border-radius: 25px;
-    transition: width 0.6s;
-    z-index: -1;
+.contain-cv-btn::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: var(--blue);
+  left: 8px;
+  border-radius: 25px;
+  transition: width 0.6s;
+  z-index: -1;
 }
-.contain-cv-btn:hover::after{
-    width:calc(100% - 8px);
+.contain-cv-btn:hover::after {
+  width: calc(100% - 8px);
 }
-.contain-cv-btn .icon-download{
-    background-color: var(--blue);
-   border-radius: 50%;
-   width: 38px;
-   height: 38px;
-   margin-right: 7px;
-   cursor: pointer;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 4px;
+.contain-cv-btn .icon-download {
+  background-color: var(--blue);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  margin-right: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
 }
-.contain-cv-btn .btn-download{
-    color: #fff;
-    font-size: 13px;
-    font-weight: 600;
+.contain-cv-btn .btn-download {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
 }
-
-
 
 /* skills section */
 
+.circle-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.circle-skills strong {
+  color: var(--title);
+}
 
-  
-.circle-skills{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+@media (min-width: 700px) {
+  .circle-skills {
+    gap: 0.7rem;
+    margin-top: 1rem;
+  }
+  .circle-skills .anan {
+    width: 80px !important;
+    height: 80px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .info-about-me .about-me {
+    gap: 1rem;
+    width: 110%;
+    margin-left: -10%;
+    margin-right: 10%;
+  }
+  .info-about-me .about-me div {
+    font-size: 13px;
+  }
+  .info-about-me .about-me div span {
+    font-size: 13px;
+  }
+  .skills-section .skills-container {
+    gap: 0.2;
+  }
+}
+@media (max-width: 400px) {
+  .info-about-me .about-me {
+    width: 120%;
+  }
+}
+@media (max-width: 550px) {
+  .info-about-me .about-me {
     gap: 0.5rem;
-}
-.circle-skills strong{
-    color: var(--title);
-} 
-  
-@media (min-width:700px) {
-    .circle-skills{
-        gap: 0.7rem;
-        margin-top: 1rem;
-    }
-    .circle-skills .anan{
-        width: 80px !important;
-        height: 80px !important;
-    }
-    
-}
-
-@media (max-width:700px) {
-    .info-about-me .about-me{
-        gap: 1rem;
-        width: 110%;
-        margin-left: -10%;
-        margin-right: 10%;
-    }
-    .info-about-me .about-me div{
-        font-size: 13px;
-    }
-    .info-about-me .about-me div span{
-        font-size: 13px;
-    }
-    .skills-section .skills-container{
-        gap: 0.2;
-    }
-}
-@media (max-width:400px) {
-    .info-about-me .about-me{
-        width: 120%;
-    }}
-@media (max-width:550px) {
-    .info-about-me .about-me{
-        gap: 0.5rem;
-        padding-left: 4px;
-    }
-    .info-about-me .about-me div{
-        font-size: 11px;
-    }
-    .info-about-me .about-me div span{
-        font-size: 11px;
-    }
+    padding-left: 4px;
+  }
+  .info-about-me .about-me div {
+    font-size: 11px;
+  }
+  .info-about-me .about-me div span {
+    font-size: 11px;
+  }
 }

@@ -8,79 +8,78 @@ table Content
 4. Responsive Design (media query)
 */
 
-
-
 /*=============================
 1. Header Design
 ================================
 */
 
-header.flex{
-    justify-content: space-between;
-    padding: 0 1rem;
-    margin-top: 1.2rem;
+header.flex {
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin-top: 1.2rem;
 }
-header.flex nav{
-    background-color: var(--bgHeader);
-    padding: 0.77rem 1.6rem;
-    border-radius: 55px;
-    /* box-shadow: 1px 1px 40px  #2323242a; */
-    box-shadow: 1px 1px 40px rgba(35, 35, 36, 0.165);
+header.flex nav {
+  background-color: var(--bgHeader);
+  padding: 0.77rem 1.6rem;
+  border-radius: 55px;
+  /* box-shadow: 1px 1px 40px  #2323242a; */
+  box-shadow: 1px 1px 40px rgba(35, 35, 36, 0.165);
 }
-header ul.flex{
-    gap: 16px;
+header ul.flex {
+  gap: 16px;
 }
-header ul li a{
-color: var(--title);
-opacity: 0.9;
-font-size:0.88rem;
-font-weight: 500;
+header ul li a {
+  color: var(--title);
+  opacity: 0.7;
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
-header ul li a:hover{
-    color: var(--title);
-    opacity: 1;
-    font-size:0.9rem;
-    color: var(--blue);
-}
-
-header.flex .menu{
-    display: none;
+header ul li a:hover {
+  color: var(--title);
+  opacity: 1;
+  font-size: 0.9rem;
+  /* color: var(--blue); */
 }
 
-
+header.flex .menu {
+  display: none;
+}
 
 /*=============================
 2. Button & icon  
 ================================
 */
 
-header .mode , header .icon-menu{
-    background-color: var(--bgHeader);
-    width: 2.4rem;
-    height: 2.4rem;
-    border-radius: 50%;
-    justify-content: center;
-    text-align: center;
-    color: var(--subtitle);    
-    border: 1px solid rgba(244, 165, 96, 0.249);
-    transition: 0.3s;
-    box-shadow: 1px 1px 40px rgba(35, 35, 36, 0.165);
+header .mode,
+header .icon-menu {
+  background-color: var(--bgHeader);
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  justify-content: center;
+  text-align: center;
+  color: var(--subtitle);
+  border: 1px solid rgba(244, 165, 96, 0.249);
+  transition: 0.3s;
+  box-shadow: 1px 1px 40px rgba(35, 35, 36, 0.165);
 }
 
-header .mode:hover , header .icon-menu:hover{
-    color: var(--title);
-    border: 1px solid rgb(244,165,96);
+header .mode:hover,
+header .icon-menu:hover {
+  color: var(--title);
+  border: 1px solid rgb(244, 165, 96);
 }
-header .icon-close{
-    font-size: 1.5rem;
-    color: var(--subtitle);
-    transition: 0.3s;
+header .icon-close {
+  font-size: 1.5rem;
+  color: var(--subtitle);
+  transition: 0.3s;
 }
 
-header .icon-close:hover{
-    font-size: 1.7rem;
-    color: crimson;
-    rotate: 180deg;
+header .icon-close:hover {
+  font-size: 1.7rem;
+  color: crimson;
+  rotate: 180deg;
 }
 
 /*=============================
@@ -88,56 +87,67 @@ header .icon-close:hover{
 ================================
 */
 @keyframes myMove {
-    0% {scale: 0;}
-    60% {scale:1.1}
-    100% {scale:1}
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
 }
 
-header .fixed ul.modal{
-    animation: myMove 0.7s 1;
-    width: 93%;
-    margin: 2rem auto 0 auto;
-    border-radius: 1rem;
-    padding: 1rem 2rem;
-    background-color: var(--secondary-color);
-    /* z-index: 9999999999999999; */
+header .fixed ul.modal {
+  animation: myMove 0.7s 1;
+  width: 93%;
+  margin: 2rem auto 0 auto;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--secondary-color);
+  /* z-index: 9999999999999999; */
 }
-header .fixed ul.modal li{
-    border-bottom:1px solid var(--border-color);
-    padding-bottom: 0.77rem;
-    padding-top: 0.5rem;
+header .fixed ul.modal li {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.77rem;
+  padding-top: 0.5rem;
 }
-header .fixed ul.modal li:last-child{
-    border: none;
+header .fixed ul.modal li:last-child {
+  border: none;
 }
-header .fixed ul.modal li a{
-    font-size: 1rem;
+header .fixed ul.modal li a {
+  font-size: 1rem;
 }
-header .fixed ul.modal li:first-child{
-text-align: right;
-padding-bottom: 0;
-padding-top: 0.2rem;
-border: none;
-margin-bottom: -1rem;
+header .fixed ul.modal li:first-child {
+  text-align: right;
+  padding-bottom: 0;
+  padding-top: 0.2rem;
+  border: none;
+  margin-bottom: -1rem;
 }
-header a.activeSection{
-    color: var(--blue);
-    font-weight: 500;
-  }
+header a.activeSection {
+  color: var(--active);
+  font-weight: 600;
+  opacity: 1;
+}
 /*====================================
 4. Responsive Design (media query)
 ======================================
 */
 
-@media (max-width:700px) {
-    header.flex nav{display: none;}  
-    header.flex .menu{display: block;}
+@media (max-width: 700px) {
+  header.flex nav {
+    display: none;
+  }
+  header.flex .menu {
+    display: block;
+  }
 }
 
-header.flex .fixed{
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.2);
-        z-index: 11;
-    backdrop-filter: blur(4px);
+header.flex .fixed {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 11;
+  backdrop-filter: blur(4px);
 }

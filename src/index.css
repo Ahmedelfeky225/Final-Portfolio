@@ -1,33 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   font-family: Montserrat;
   letter-spacing: 0.1px;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-*{
+* {
   margin: 0;
   padding: 0;
 }
-*, *:before, *:after {box-sizing: inherit;}  
-:root{
-  --primary-color:#000;
-  --secondary-color:#2e2d2d;
-  --border-color:rgba(63,63,70,0.4);
-  --title:rgb(244,244,245);
-  --subtitle:rgb(161,161,170);
-  --bgHeader:rgb(39,39,42);
-  --blue:rgb(93,188,252);
-  --icon-hover:#d4d4d8;
-  --container-padding:4.8rem;
-  --text-shadow:2px 2px 5px rgba(0, 0, 0, 0.151);
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-.light{
+:root {
+  --primary-color: #1b1d21;
+  --secondary-color: #2a3335;
+  --border-color: rgba(63, 63, 70, 0.4);
+  --title: rgb(244, 244, 245);
+  --subtitle: rgb(161, 161, 170);
+  --bgHeader: #51686dc9;
+  --blue: #2c3235;
+  --icon-hover: #d4d4d8;
+  --container-padding: 4.8rem;
+  --text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.151);
+  --active: #efeeea;
+  --btnModal-more: #363e42;
+}
+.light {
   --primary-color: rgb(250, 250, 250);
   --secondary-color: rgb(255, 255, 255);
   --border-color: rgba(202, 202, 202, 0.518);
@@ -36,12 +42,14 @@ html{
   --blue: rgb(0, 149, 246);
   --bgHeader: rgb(253, 253, 253);
   --icon-hover: #333;
+  --active: rgb(0, 149, 246);
+  --btnModal-more: rgb(55, 168, 244);
 }
-body{
+body {
   background-color: var(--primary-color);
   color: #fff;
 }
-.container{
+.container {
   border: 2px solid violet;
   width: 90%;
   margin: 0 auto;
@@ -49,59 +57,59 @@ body{
   border: 2px solid var(--border-color);
   padding: 0 var(--container-padding);
 }
-.divider{
-  border:1px solid var(--border-color);
+.divider {
+  border: 1px solid var(--border-color);
   margin: 2rem 0;
   width: calc(100% + var(--container-padding) + var(--container-padding));
   margin-left: calc(var(--container-padding) * -1);
 }
-li{
+li {
   list-style: none;
 }
-a{
-text-decoration: none;
-color: initial;
-transition:0.2s;
+a {
+  text-decoration: none;
+  color: initial;
+  transition: 0.2s;
 }
 
-.flex{
+.flex {
   display: flex;
   align-items: center;
 }
 
-.border-red{
+.border-red {
   border: 2px solid red;
 }
-button{
+button {
   all: unset;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
 }
 
-button:active{
+button:active {
   scale: 0.9;
 }
 
-button:disabled{
+button:disabled {
   opacity: 0.4;
   cursor: not-allowed;
 }
-@media (max-width:1000px) {
-  .container{
-    --container-padding:1.7rem;
+@media (max-width: 1000px) {
+  .container {
+    --container-padding: 1.7rem;
     width: 90%;
-    padding:0 var(--container-padding);
+    padding: 0 var(--container-padding);
   }
-  .divider{
+  .divider {
     width: calc(100% + var(--container-padding) + var(--container-padding));
     margin-left: calc(var(--container-padding) * -1);
   }
 }
 
 ::-webkit-scrollbar {
-  width: 0.8rem; 
+  width: 0.8rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -122,8 +130,8 @@ button:disabled{
 /* for Firefox */
 /* html {scrollbar-color: #9e4673 #3d4a59;}  */
 
-.scrollToUp{
-  background-color: #2e2d2dd5;
+.scrollToUp {
+  background-color: #414f53;
   width: 2.6rem;
   height: 2.6rem;
   text-align: center;
@@ -140,21 +148,19 @@ button:disabled{
   background-color: #2e2d2d;
 }
 
-
-
-@media (max-width:600px) {
-  .container{
+@media (max-width: 600px) {
+  .container {
     width: 98%;
-    padding:0 var(--container-padding);
+    padding: 0 var(--container-padding);
   }
 
-  .scrollToUp{
+  .scrollToUp {
     width: 2.2rem;
     height: 2.2rem;
     font-size: 1rem;
     opacity: 0.6;
   }
-  .scrollToUp{
+  .scrollToUp {
     right: 2%;
   }
 }
