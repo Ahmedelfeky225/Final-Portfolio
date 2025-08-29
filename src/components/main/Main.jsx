@@ -66,8 +66,11 @@ const Main = () => {
                 <img width={256} height={140} src={imgPath} alt="" />
                 <div className="box" style={{ width: "256px" }}>
                   <h1 className="title">{projectTitle}</h1>
-                  <p className="sub-title" style={{ lineHeight: "1.4" }}>
-                    {textSlicer(projectDesc, 60)}
+                  <p
+                    className="sub-title line-clamp-3"
+                    style={{ lineHeight: "1.4" }}
+                  >
+                    {projectDesc}
                   </p>
                   <div className="icons flex">
                     <div className="flex" style={{ gap: "1rem" }}>

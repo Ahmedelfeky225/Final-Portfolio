@@ -264,6 +264,161 @@ Stripe payment integration in Test Mode.
 
 This project was a great opportunity to practice integrating modern tools and libraries into a complete eCommerce application.`,
   },
+  {
+    projectTitle: "OSMA Ecommerce",
+    projectDesc: `projectDesc: A responsive eCommerce website for OSMA Perfume brand, built with Next.js and styled using Tailwind CSS. It features a modern UI, product browsing, and a unique "Ask About Product" feature for direct customer interaction.`,
+    imgPath: "./images/osma1.png",
+    category: ["next"],
+    linkLiveProject: "https://osma-perfume.vercel.app/",
+    linkProjectInGithub: "https://github.com/Ahmedelfeky225/OSMA",
+    sliderImages: [
+      "./images/OSMAS2.png",
+      "./images/osma2.png",
+      "./images/OSMAOFFFF.png",
+      "./images/osma4.png",
+    ],
+    detailsProjectDes: `
+This project was developed for the OSMA Perfume brand to create an elegant and functional online shopping experience.
+
+Key Frontend Features:
+
+Next.js for a fast and SEO-friendly architecture.
+
+Multi-language support (Arabic & English) implemented using next-intl.
+
+Responsive design using Tailwind CSS, optimized for all screen sizes.
+
+Product Showcase with image optimization and smooth navigation.
+
+"Ask About Product" feature that allows users to contact the brand owner with product details.
+
+Search and Filters to help users easily find products.
+
+Micro-interactions & Animations for an enhanced user experience.
+
+SEO Optimization with proper meta tags and OG tags.
+
+Image hosting via Cloudinary for fast loading and high-quality visuals.
+
+This project provided a polished and user-friendly frontend experience, ensuring the brand's online presence is both modern and efficient.
+`,
+  },
+  {
+    projectTitle: "Vip Group In UAE",
+    projectDesc: `A corporate website for VIP GROUP, a UAE-based logistics and shipping company. Built with Next.js and Tailwind CSS, featuring responsive design, dynamic sliders, company info, team showcases, multi-language support using next-intl, and a contact section.`,
+    imgPath: "./images/vip1.png",
+    category: ["next"],
+    linkLiveProject: "https://app.vipgroupfz.com/",
+    linkProjectInGithub: "https://github.com/Ahmedelfeky225/VIP-GROUP-Projec",
+    sliderImages: [
+      "./images/vip2.png",
+      "./images/vip3.png",
+      "./images/vip4.png",
+    ],
+    detailsProjectDes: `This project was developed in collaboration with VIP GROUP, a logistics and shipping company in the UAE, to create a professional and visually appealing corporate website.
+
+Key Frontend Features:
+
+Built with Next.js for performance and SEO.
+
+Responsive design using Tailwind CSS.
+
+Multi-language support using i18n next for English & Arabic.
+
+Dynamic sliders for company highlights and team members.
+
+Contact Us page for easy client communication.
+
+Modern UI with smooth animations.
+
+Future Enhancements:
+
+Tracking system integration.
+
+Additional interactive features.`,
+  },
+  {
+    projectTitle: "Masar Academy",
+    projectDesc: `An educational platform for teaching the Arabic language in the US and Canada, specifically for non-native speakers. Built with Next.js and Tailwind CSS, featuring responsive design, user registration for parents and children, and a full dashboard for managing student details and subscriptions. Multi-language support using next-intl (Arabic & English).`,
+    imgPath: "./images/masar1.png",
+    category: ["next"],
+    linkLiveProject: "https://masar.ca/",
+    linkProjectInGithub: "https://github.com/Ahmedelfeky225/Masar-Website",
+    sliderImages: [
+      "./images/masar2.png",
+      "./images/masar3.png",
+      "./images/masar4.png",
+      "./images/masar5.png",
+      "./images/masar6.png",
+    ],
+    detailsProjectDes: `This project was developed for Masar Academy, an educational platform in the US and Canada focused on teaching Arabic to non-native speakers.
+
+The platform enables parents to register their children, manage their profiles, and access a dashboard that provides full control over student data, subscription status, and free session attendance.
+
+Key Features:
+
+Built with Next.js for high performance and SEO optimization.
+
+Tailwind CSS for a modern, fully responsive UI.
+
+Multi-language support using next-intl for Arabic and English.
+
+Student registration system designed for parents and children.
+
+A custom dashboard to manage student information, subscriptions, and session history.
+
+Smooth animations and a user-friendly interface for an enhanced experience.
+
+Future Enhancements:
+
+Adding interactive learning modules and progress tracking.
+
+Integration of payment systems for subscription plans.
+
+`,
+  },
+  {
+    projectTitle: "Qomra in UAE",
+    projectDesc:
+      "A corporate website for Qomra, a creative agency based in the UAE specializing in product photography, marketing campaigns, and social media services. Built with Next.js and Tailwind CSS, featuring responsive design, dynamic image showcases, and multi-language support using next-intl.,",
+    imgPath: "/images/qomra1.png",
+    category: ["next"],
+    linkLiveProject: "https://qomrauae.com/",
+    linkProjectInGithub: "https://github.com/Ahmedelfeky225/qomra",
+    sliderImages: [
+      "/images/qomra1.png",
+      "/images/qomra2.png",
+      "/images/qomra3.png",
+      "/images/qomra4.png",
+      "/images/qomra5.png",
+      "/images/qomra6.png",
+    ],
+    detailsProjectDes: `Developed for Qomra, a UAE-based creative agency offering photography, marketing campaigns, and social media management.
+
+The site introduces the company, showcases work through dynamic galleries, and includes a Contact Us section, delivering a clean, professional, and responsive design with room for future enhancements.
+
+Key Features:
+
+Next.js for performance & SEO.
+
+Tailwind CSS for modern responsive UI.
+
+Multi-language support (Arabic & English) via next-intl.
+
+Image showcase sections for portfolio.
+
+Contact page for easy communication.
+
+Smooth transitions & interactive elements for engagement.
+
+Future Enhancements:
+
+Add recent projects & testimonials.
+
+Implement blog for marketing tips.
+
+Continuous updates for better UX.`,
+  },
 ];
 
 export const buttonCategories = [
@@ -272,6 +427,7 @@ export const buttonCategories = [
   { btnCategory: "Javascript", categoryName: "js" },
   { btnCategory: "React & MUI", categoryName: "react" },
   // { btnCategory: "Node & Express", categoryName: "node" },
+  { btnCategory: "Nextjs", categoryName: "next" },
   { btnCategory: "Wordpress", categoryName: "wp" },
 ];
 

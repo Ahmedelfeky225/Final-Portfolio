@@ -1,7 +1,6 @@
 main .modal-overlay {
   position: fixed;
   inset: 0;
-  /* background-color: rgba(40, 40, 48, 0.993); */
   background-color: var(--primary-color);
   width: 99%;
   height: 100%;
@@ -15,7 +14,7 @@ main .modal-overlay {
 
 main .modal-overlay .modal-more {
   width: 70%;
-  height: 90vh;
+  height: 95vh;
   background-color: var(--secondary-color);
   border-radius: 1rem;
   padding: 0rem 2rem 2rem 2rem;
@@ -114,7 +113,6 @@ main .modal-overlay .modal-more .links-icons a .main-icon .icon {
   font-size: 18px;
 }
 
-/* CSS for Carousel */
 .carousel-container {
   width: 100%;
 }
@@ -134,7 +132,6 @@ main .modal-overlay .modal-more .links-icons a .main-icon .icon {
   height: 100% !important;
   object-fit: cover;
   border-radius: 0.2rem;
-  /* opacity: 0.9; */
 }
 div.gap-2 {
   display: none !important;
@@ -153,8 +150,6 @@ div.gap-2 {
     -1px -1px 5px rgba(255, 255, 255, 0.105);
   transition: 0.3s;
 }
-
-/* تعديلات للشاشات الصغيرة */
 @media (max-width: 700px) {
   .btnBack,
   .btnTop {
@@ -166,7 +161,7 @@ div.gap-2 {
     height: 90vh !important;
   }
   .carousel-container {
-    height: 250px !important; /* ارتفاع أقل للشاشات الصغيرة */
+    height: 250px !important;
   }
 
   .contain-images {
@@ -200,4 +195,3 @@ div.gap-2 {
     font-size: 12px !important;
   }
 }
-/* إخفاء الدواير (navigation dots) */

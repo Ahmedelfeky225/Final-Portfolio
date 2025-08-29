@@ -38,8 +38,9 @@ const Hero = () => {
           Junior Web Developer specializing in React and Next.js, passionate
           about building responsive and interactive web applications. I also
           have knowledge of WordPress for creating and managing websites.
-          Continuously improving through self-paced learning and hands-on
-          projects.
+          Currently working part-time remotely at Qomra, a company based in the
+          UAE, while continuously improving my skills through self-learning and
+          hands-on projects.
         </p>
         <MySocial />
       </div>
