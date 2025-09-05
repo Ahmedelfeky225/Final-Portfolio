@@ -35,7 +35,7 @@ const Hero = () => {
           </motion.h4>
         </div>
         <p className="sub-title">
-          Junior Web Developer specializing in React and Next.js, passionate
+          Web Developer specializing in React and Next.js, passionate
           about building responsive and interactive web applications. I also
           have knowledge of WordPress for creating and managing websites.
           Currently working part-time remotely at Qomra, a company based in the
