@@ -266,7 +266,7 @@ This project was a great opportunity to practice integrating modern tools and li
   },
   {
     projectTitle: "OSMA Ecommerce",
-    projectDesc: `projectDesc: A responsive eCommerce website for OSMA Perfume brand, built with Next.js and styled using Tailwind CSS. It features a modern UI, product browsing, and a unique "Ask About Product" feature for direct customer interaction.`,
+    projectDesc: `A responsive eCommerce website for OSMA Perfume brand, built with Next.js and styled using Tailwind CSS. It features a modern UI, product browsing, and a unique "Ask About Product" feature for direct customer interaction.`,
     imgPath: "./images/osma1.png",
     category: ["next"],
     linkLiveProject: "https://osma-perfume.vercel.app/",
