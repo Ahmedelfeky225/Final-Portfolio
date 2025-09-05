@@ -41,7 +41,7 @@ const ModalMore = ({ dataProject, setShowModalMore }) => {
                 className="sub-title max-w-5xl text-center mx-auto h-full"
                 style={{ lineHeight: 1.6 }}
               >
-                {limitDesc(detailsProjectDes, 600)}
+                {limitDesc(detailsProjectDes, 500)}
               </p>
             </div>
             <div className="links-icons">
